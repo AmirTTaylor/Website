@@ -102,11 +102,31 @@ nav{
     top:10px;
     left:10px;
 }
+#lineBreak3{
+    border:none;
+    width: 35%;
+    height:5px;
+    background-color: aliceblue;
+    position: relative;
+    top:85px;
+    right:315px;
+}
 #About{
     width:50%;
     font-size:30px;
     position: relative;
     top:100px;
     left:357px;
-
 }
+#resume{
+    position: relative;
+    bottom:200px;
+    left:1000px;
+}
+#resumeHeader{
+    position: relative;
+    top:150px;
+    left:300px;
+    font-size:100px
+}
+
