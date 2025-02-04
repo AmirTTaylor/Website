@@ -21,18 +21,73 @@ a{
 a:hover{
     color:red;
 }
-nav{
-    padding-top: 30px;
+nav {
+    display: flex;
+    justify-content: space-between;  /* Pushes items to opposite sides */
+    align-items: center;
+    padding: 20px;
+    background-color: black;
 }
-#Greeting{
-    position: relative;
-    top:230px;
-    left:300px;
+
+nav .nav-left {
+    margin-left: 40px;  /* Adds spacing from the left */
 }
-#Introduction{
-    position: relative;
-    top:200px;
-    left:300px;
+
+nav .nav-right {
+    display: flex;
+    gap: 30px;  /* Controls spacing between links */
+    margin-right: 40px;  /* Adds spacing from the right */
+}
+
+nav a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* Aligns text to the left */
+    justify-content: center;
+    height: 70vh;
+    padding-left: 15vw;  /* Moves content 25% from the left */
+    text-align: left;
+}
+#Greeting {
+    margin-bottom: -10px;  /* Moves Introduction up closer */
+}
+
+#Introduction {
+    margin-top: 5px;  /* Moves Greeting down closer */
+}
+
+h1 {
+    font-size: 3vw;
+}
+
+.highlight {
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .intro-container {
+        height: auto;
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 5vw;
+    }
 }
 #headshot{
     clip-path: circle(50%);
@@ -73,14 +128,14 @@ nav{
 }
 #calcCode{
     position: relative;
-    bottom:550px;
+    bottom:900px;
     left:750px;
     font-size: 50px;
     color: red;
 }
 #calcCode2{
     position: relative;
-    bottom:575px;
+    bottom:925px;
     left:750px;
     font-size: 50px;
     color: red;
@@ -130,4 +185,20 @@ nav{
     left:300px;
     font-size:100px
 }
-
+#TTTHeader{
+    position: relative;
+    bottom:675px;
+    left:750px;
+}
+#TTTOverview{
+    position: relative;
+    bottom: 650px;
+    left:750px;
+    font-size: 12;
+    width: 50%;
+}
+#TTTScreenshot{
+    position: relative;
+    bottom: 100px;
+    right: 400px;
+}
